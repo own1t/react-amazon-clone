@@ -1,4 +1,4 @@
-## Amazon Clone Application with limited functionalities
+## Amazon Clone Application with user authentication and payment functionality
 
 ### Built with ReactJS & Firebase
 
