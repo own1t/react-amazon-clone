@@ -9,6 +9,7 @@ import { useStateValue } from "./components/StateProvider";
 import Home from "./views/Home";
 import Checkout from "./views/Checkout";
 import Login from "./views/Login";
+import Orders from "./views/Orders";
 
 import Header from "./components/Header";
 
@@ -56,6 +57,10 @@ function App() {
             <Elements stripe={promise}>
               <Payment />
             </Elements>
+          </Route>
+          <Route path="/orders">
+            <Header />
+            <Orders />
           </Route>
           <Route path="/">
             <Header />

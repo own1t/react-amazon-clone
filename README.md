@@ -1,4 +1,4 @@
-## Amazon Clone Application with user authentication and payment functionality
+## Amazon Clone Application with user authentication(Firebase) and payment functionality(Stripe)
 
 ### Built with ReactJS & Firebase
 
