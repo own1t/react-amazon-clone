@@ -1,6 +1,8 @@
 import React from "react";
 import StarIcon from "@material-ui/icons/Star";
+
 import { useStateValue } from "./StateProvider";
+
 import "./Product.css";
 
 function Product({ id, title, image, price, rating }) {

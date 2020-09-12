@@ -1,12 +1,13 @@
 import React from "react";
-import { useStateValue } from "../components/StateProvider";
+
 import Subtotal from "../components/Subtotal";
 import CheckoutProduct from "../components/CheckoutProduct";
+import { useStateValue } from "../components/StateProvider";
 
 import "./Checkout.css";
 
 function Checkout() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
 
   return (
     <>
@@ -19,6 +20,7 @@ function Checkout() {
           />
 
           <div>
+            <h3>Hello, {user?.email}</h3>
             <h2 className="checkout__title">Your shopping Basket</h2>
 
             {basket.map((item) => (
