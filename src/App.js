@@ -8,20 +8,22 @@ import Checkout from "./views/Checkout";
 import Header from "./components/Header";
 
 import "./App.css";
+import Login from "./views/Login";
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <Header />
         <Switch>
           <Route path="/login">
-            <h1>Login Page</h1>
+            <Login />
           </Route>
           <Route path="/checkout">
+            <Header />
             <Checkout />
           </Route>
           <Route path="/">
+            <Header />
             <Home />
           </Route>
         </Switch>
