@@ -3,8 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const { response } = require("express");
 
-const SECRET_KEY =
-  "sk_test_51HQfDYGvGTXqbPTwWAIxIXq0LgUqusLFIjddbfZ5TbRHBlgoTGJnzNM0Dqfui0xjyBBopgIMeAnXZ6SxVYeNAmOF00PlZNwEjd";
+const SECRET_KEY = process.env.SECRET_KEY;
 
 const stripe = require("stripe")(SECRET_KEY);
 
